@@ -15,12 +15,11 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-bold text-lg text-white">
-                RWA<span className="text-[#FF7A1B]">2TOKENS</span>
+                RWA<span className="text-[#FF7A1B]">4TOKENS</span>
               </span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
-              The Full-Stack Web3 Tokenization Partner. Engineering the infrastructure, compliance, and liquidity that
-              powers the decentralized real-world asset economy.
+              RWA4Tokens is a technology-led ecosystem connecting real-world assets, digital intelligence, tokenization workflows and the infrastructure of modern capital markets.
             </p>
             <div className="flex items-center gap-3">
               {[
@@ -80,12 +79,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <p>© 2026 Rwa2tokens. All rights reserved.</p>
+        <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <p>© 2026 RWA4Tokens · A technology ecosystem initiative · New York · United States · Global Reach</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-slate-300">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-slate-300">Terms of Service</Link>
           </div>
+        </div>
+
+        <div className="mt-6 pt-6 border-t border-white/[0.04] text-[11px] text-slate-400 leading-relaxed max-w-4xl">
+          Concept landing page for strategic positioning. Descriptions are aspirational and do not assert production readiness, regulatory approval or the availability of any investment offering. Tokenization, issuance, trading and related services may require appropriately licensed third-party providers and jurisdiction-specific approvals. No investment, legal or financial advice is offered by this website.
         </div>
       </div>
     </footer>

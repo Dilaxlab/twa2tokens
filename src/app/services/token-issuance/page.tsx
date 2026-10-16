@@ -22,7 +22,7 @@ export default function TokenIssuancePage() {
 </section>
 <section style={{ background: "var(--bg-secondary)" }}>
 <div className="container">
-<img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&w=1400&q=80" alt="Token and crypto assets" loading="lazy" className="svc-hero-img" />
+<img src='/images/Token Issuance & RWA.jpeg' alt="Token and crypto assets" loading="lazy" className="svc-hero-img" />
 </div>
 </section>
 <section className="features-section" style={{ background: "var(--bg-secondary)" }}>

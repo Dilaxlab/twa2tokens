@@ -63,10 +63,19 @@ export default function Navbar() {
       <header className="floating-topbar">
         <div className={`floating-topbar-inner ${isScrolled ? 'scrolled' : ''}`}>
           {/* Logo */}
-          <Link href="/" className="brand-logo flex items-center gap-3" onClick={() => setMobileOpen(false)}>
+          <Link
+            href="/"
+            className="brand-logo flex items-center gap-3"
+            onClick={() => setMobileOpen(false)}
+          >
             <div className="flex items-center gap-1.5 opacity-90 hover:opacity-100 transition-opacity">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-white">
-                <path d="M4 18V6M7 21V3M10 17V7M13 20V4M16 16V8M20 18V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <path
+                  d="M4 18V6M7 21V3M10 17V7M13 20V4M16 16V8M20 18V6"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                />
               </svg>
               <span className="font-semibold text-[14px] sm:text-[15px] tracking-[0.16em] uppercase text-white font-sans">
                 RWA2TOKENS
@@ -132,7 +141,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2.5">
             {/* Desktop Launch Button (hidden on mobile and tablet) */}
             <Link href="/contact" className="launch-btn hidden lg:inline-flex">
-              <span>Launch app</span>
+              <span>Start a Project</span>
               <i className="fa-solid fa-arrow-right text-[11px]"></i>
             </Link>
 
@@ -156,7 +165,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
             <div className="flex items-center gap-2">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
-                <path d="M4 18V6M7 21V3M10 17V7M13 20V4M16 16V8M20 18V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <path
+                  d="M4 18V6M7 21V3M10 17V7M13 20V4M16 16V8M20 18V6"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                />
               </svg>
               <span className="font-semibold text-sm tracking-wider uppercase text-white font-mono">
                 Navigation
@@ -177,7 +191,9 @@ export default function Navbar() {
               href="/"
               onClick={() => setMobileOpen(false)}
               className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-semibold transition-all ${
-                pathname === '/' ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30' : 'text-slate-200 hover:bg-white/5'
+                pathname === '/'
+                  ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30'
+                  : 'text-slate-200 hover:bg-white/5'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -191,7 +207,9 @@ export default function Navbar() {
               href="/about"
               onClick={() => setMobileOpen(false)}
               className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-semibold transition-all ${
-                pathname === '/about' ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30' : 'text-slate-200 hover:bg-white/5'
+                pathname === '/about'
+                  ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30'
+                  : 'text-slate-200 hover:bg-white/5'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -215,7 +233,9 @@ export default function Navbar() {
                     9 Areas
                   </span>
                 </div>
-                <i className={`fa-solid fa-chevron-down text-xs transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-[#FF7A1B]' : 'opacity-50'}`}></i>
+                <i
+                  className={`fa-solid fa-chevron-down text-xs transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-[#FF7A1B]' : 'opacity-50'}`}
+                ></i>
               </button>
 
               {mobileServicesOpen && (
@@ -226,7 +246,9 @@ export default function Navbar() {
                       href={s.href}
                       onClick={() => setMobileOpen(false)}
                       className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${
-                        pathname === s.href ? 'bg-[#FF7A1B]/20 text-white font-semibold' : 'text-slate-300 hover:text-white hover:bg-white/5'
+                        pathname === s.href
+                          ? 'bg-[#FF7A1B]/20 text-white font-semibold'
+                          : 'text-slate-300 hover:text-white hover:bg-white/5'
                       }`}
                     >
                       <i className={`fa-solid ${s.icon} text-[#FF7A1B] text-xs w-4`}></i>
@@ -241,7 +263,9 @@ export default function Navbar() {
               href="/industries"
               onClick={() => setMobileOpen(false)}
               className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-semibold transition-all ${
-                pathname === '/industries' ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30' : 'text-slate-200 hover:bg-white/5'
+                pathname === '/industries'
+                  ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30'
+                  : 'text-slate-200 hover:bg-white/5'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -255,7 +279,9 @@ export default function Navbar() {
               href="/ventures"
               onClick={() => setMobileOpen(false)}
               className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-semibold transition-all ${
-                pathname === '/ventures' ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30' : 'text-slate-200 hover:bg-white/5'
+                pathname === '/ventures'
+                  ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30'
+                  : 'text-slate-200 hover:bg-white/5'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -281,7 +307,9 @@ export default function Navbar() {
               href="/contact"
               onClick={() => setMobileOpen(false)}
               className={`flex items-center justify-between px-4 py-3.5 rounded-2xl text-base font-semibold transition-all ${
-                pathname === '/contact' ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30' : 'text-slate-200 hover:bg-white/5'
+                pathname === '/contact'
+                  ? 'bg-[#FF7A1B]/15 text-[#FF7A1B] border border-[#FF7A1B]/30'
+                  : 'text-slate-200 hover:bg-white/5'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -299,7 +327,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="launch-btn !flex w-full py-4 text-center justify-center font-bold text-base shadow-[0_0_30px_rgba(255,122,27,0.4)]"
             >
-              <span>Launch app</span>
+              <span>Start a Project</span>
               <i className="fa-solid fa-arrow-right text-xs"></i>
             </Link>
           </div>
